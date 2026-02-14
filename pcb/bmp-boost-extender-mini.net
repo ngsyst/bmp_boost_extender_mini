@@ -1,0 +1,735 @@
+(export 
+  (version "E") 
+  (design 
+    (source "C:\\Users\\desk\\git_repos\\bmp-boost-extender_mini\\tiny\\tiny\\tiny.kicad_sch") 
+    (date "2026-02-07T18:40:03+0900") 
+    (tool "Eeschema 9.0.4") 
+    (sheet 
+      (number "1") 
+      (name "/") 
+      (tstamps "/") 
+      (title_block 
+        (title) 
+        (company) 
+        (rev) 
+        (date) 
+        (source "tiny.kicad_sch") 
+        (comment 
+          (number "1") 
+          (value "")) 
+        (comment 
+          (number "2") 
+          (value "")) 
+        (comment 
+          (number "3") 
+          (value "")) 
+        (comment 
+          (number "4") 
+          (value "")) 
+        (comment 
+          (number "5") 
+          (value "")) 
+        (comment 
+          (number "6") 
+          (value "")) 
+        (comment 
+          (number "7") 
+          (value "")) 
+        (comment 
+          (number "8") 
+          (value "")) 
+        (comment 
+          (number "9") 
+          (value ""))))) 
+  (components 
+    (comp 
+      (ref "FPC1") 
+      (value "~") 
+      (footprint "ProLib_pcs_2026-02-07:FPC-SMD_6P-P0.50_GT-F0501SR10-06S1101") 
+      (datasheet "https://item.szlcsc.com/datasheet/GT-F0501SR10-06S1101/23912640.html") 
+      (description "Locking Feature:Hinged Lid Contact Type:Bottom Contact Number of Contacts:6P Pitch:0.5mm Mounting Type:Surface Mount, Right Angle FFC, FCB Thickness:0.3mm FFC, FCB Thickness:0.3mm Height Above Board:1mm Contact Material:Phosphor Bronze Contact Plating:Gol") 
+      (fields 
+        (field 
+          (name "Manufacturer Part") "GT-F0501SR10-06S1101") 
+        (field 
+          (name "Manufacturer") "G-Switch(品赞)") 
+        (field 
+          (name "Supplier Part") "C22380676") 
+        (field 
+          (name "Supplier") "LCSC") 
+        (field 
+          (name "LCSC Part Name") "翻盖式 下接 P数:6P 间距:0.5mm") 
+        (field 
+          (name "Footprint") "ProLib_pcs_2026-02-07:FPC-SMD_6P-P0.50_GT-F0501SR10-06S1101") 
+        (field 
+          (name "Datasheet") "https://item.szlcsc.com/datasheet/GT-F0501SR10-06S1101/23912640.html") 
+        (field 
+          (name "Description") "Locking Feature:Hinged Lid Contact Type:Bottom Contact Number of Contacts:6P Pitch:0.5mm Mounting Type:Surface Mount, Right Angle FFC, FCB Thickness:0.3mm FFC, FCB Thickness:0.3mm Height Above Board:1mm Contact Material:Phosphor Bronze Contact Plating:Gol")) 
+      (libsource 
+        (lib "New_Library") 
+        (part "GT-F0501SR10-06S1101") 
+        (description "Locking Feature:Hinged Lid Contact Type:Bottom Contact Number of Contacts:6P Pitch:0.5mm Mounting Type:Surface Mount, Right Angle FFC, FCB Thickness:0.3mm FFC, FCB Thickness:0.3mm Height Above Board:1mm Contact Material:Phosphor Bronze Contact Plating:Gol")) 
+      (property 
+        (name "Manufacturer Part") 
+        (value "GT-F0501SR10-06S1101")) 
+      (property 
+        (name "Manufacturer") 
+        (value "G-Switch(品赞)")) 
+      (property 
+        (name "Supplier Part") 
+        (value "C22380676")) 
+      (property 
+        (name "Supplier") 
+        (value "LCSC")) 
+      (property 
+        (name "LCSC Part Name") 
+        (value "翻盖式 下接 P数:6P 间距:0.5mm")) 
+      (property 
+        (name "Sheetname") 
+        (value "ルート")) 
+      (property 
+        (name "Sheetfile") 
+        (value "tiny.kicad_sch")) 
+      (sheetpath 
+        (names "/") 
+        (tstamps "/")) 
+      (tstamps "1f514e73-25af-434b-afeb-f6d1db9f0e50")) 
+    (comp 
+      (ref "U1") 
+      (value "~") 
+      (footprint "library:BMP-Boost-full") 
+      (fields 
+        (field 
+          (name "Footprint") "library:BMP-Boost-full") 
+        (field 
+          (name "Datasheet")) 
+        (field 
+          (name "Description"))) 
+      (libsource 
+        (lib "Library") 
+        (part "BMP-Boost") 
+        (description "")) 
+      (property 
+        (name "Sheetname") 
+        (value "ルート")) 
+      (property 
+        (name "Sheetfile") 
+        (value "tiny.kicad_sch")) 
+      (sheetpath 
+        (names "/") 
+        (tstamps "/")) 
+      (tstamps "d379d795-92c8-4f8c-9493-72182e3e9f8e" "b0cffeee-96f6-4708-b39f-0dfd83e6b1df"))) 
+  (libparts 
+    (libpart 
+      (lib "Library") 
+      (part "BMP-Boost") 
+      (fields 
+        (field 
+          (name "Reference") "U") 
+        (field 
+          (name "Value")) 
+        (field 
+          (name "Footprint")) 
+        (field 
+          (name "Datasheet")) 
+        (field 
+          (name "Description"))) 
+      (pins 
+        (pin 
+          (num "1") 
+          (name "P0.08") 
+          (type "bidirectional")) 
+        (pin 
+          (num "2") 
+          (name "P0.11") 
+          (type "bidirectional")) 
+        (pin 
+          (num "3") 
+          (name "GND") 
+          (type "power_in")) 
+        (pin 
+          (num "4") 
+          (name "GND") 
+          (type "power_in")) 
+        (pin 
+          (num "5") 
+          (name "P0.18") 
+          (type "bidirectional")) 
+        (pin 
+          (num "6") 
+          (name "P0.16") 
+          (type "bidirectional")) 
+        (pin 
+          (num "7") 
+          (name "P0.19") 
+          (type "bidirectional")) 
+        (pin 
+          (num "8") 
+          (name "P0.20") 
+          (type "bidirectional")) 
+        (pin 
+          (num "9") 
+          (name "P0.22") 
+          (type "bidirectional")) 
+        (pin 
+          (num "10") 
+          (name "P0.23") 
+          (type "bidirectional")) 
+        (pin 
+          (num "11") 
+          (name "P1.00") 
+          (type "bidirectional")) 
+        (pin 
+          (num "12") 
+          (name "P1.03") 
+          (type "bidirectional")) 
+        (pin 
+          (num "13") 
+          (name "P0.09") 
+          (type "bidirectional")) 
+        (pin 
+          (num "14") 
+          (name "P0.10") 
+          (type "bidirectional")) 
+        (pin 
+          (num "15") 
+          (name "P1.15") 
+          (type "bidirectional")) 
+        (pin 
+          (num "16") 
+          (name "P1.14") 
+          (type "bidirectional")) 
+        (pin 
+          (num "17") 
+          (name "P0.03") 
+          (type "bidirectional")) 
+        (pin 
+          (num "18") 
+          (name "P0.30") 
+          (type "bidirectional")) 
+        (pin 
+          (num "19") 
+          (name "P0.00") 
+          (type "bidirectional")) 
+        (pin 
+          (num "20") 
+          (name "P0.05") 
+          (type "bidirectional")) 
+        (pin 
+          (num "21") 
+          (name "VCC") 
+          (type "power_out")) 
+        (pin 
+          (num "22") 
+          (name "BOOT") 
+          (type "input")) 
+        (pin 
+          (num "23") 
+          (name "GND") 
+          (type "power_in")) 
+        (pin 
+          (num "24") 
+          (name "5V") 
+          (type "power_out")) 
+        (pin 
+          (num "25") 
+          (name "BAT+") 
+          (type "power_in")) 
+        (pin 
+          (num "26") 
+          (name "GND") 
+          (type "power_in")) 
+        (pin 
+          (num "27") 
+          (name "VBUS") 
+          (type "bidirectional")) 
+        (pin 
+          (num "28") 
+          (name "D-") 
+          (type "bidirectional")) 
+        (pin 
+          (num "29") 
+          (name "D+") 
+          (type "bidirectional")) 
+        (pin 
+          (num "30") 
+          (name "GND") 
+          (type "bidirectional")) 
+        (pin 
+          (num "31") 
+          (name "P0.17") 
+          (type "bidirectional")) 
+        (pin 
+          (num "32") 
+          (name "P0.21") 
+          (type "bidirectional")) 
+        (pin 
+          (num "33") 
+          (name "P0.24") 
+          (type "bidirectional")) 
+        (pin 
+          (num "34") 
+          (name "P1.02") 
+          (type "bidirectional")) 
+        (pin 
+          (num "35") 
+          (name "P1.10") 
+          (type "bidirectional")) 
+        (pin 
+          (num "36") 
+          (name "P1.11") 
+          (type "bidirectional")) 
+        (pin 
+          (num "37") 
+          (name "P0.29") 
+          (type "bidirectional")) 
+        (pin 
+          (num "38") 
+          (name "P0.31") 
+          (type "bidirectional")))) 
+    (libpart 
+      (lib "New_Library") 
+      (part "GT-F0501SR10-06S1101") 
+      (description "Locking Feature:Hinged Lid Contact Type:Bottom Contact Number of Contacts:6P Pitch:0.5mm Mounting Type:Surface Mount, Right Angle FFC, FCB Thickness:0.3mm FFC, FCB Thickness:0.3mm Height Above Board:1mm Contact Material:Phosphor Bronze Contact Plating:Gol") 
+      (docs "https://item.szlcsc.com/datasheet/GT-F0501SR10-06S1101/23912640.html") 
+      (fields 
+        (field 
+          (name "Reference") "FPC") 
+        (field 
+          (name "Value")) 
+        (field 
+          (name "Footprint") "ProLib_pcs_2026-02-07:FPC-SMD_6P-P0.50_GT-F0501SR10-06S1101") 
+        (field 
+          (name "Datasheet") "https://item.szlcsc.com/datasheet/GT-F0501SR10-06S1101/23912640.html") 
+        (field 
+          (name "Description") "Locking Feature:Hinged Lid Contact Type:Bottom Contact Number of Contacts:6P Pitch:0.5mm Mounting Type:Surface Mount, Right Angle FFC, FCB Thickness:0.3mm FFC, FCB Thickness:0.3mm Height Above Board:1mm Contact Material:Phosphor Bronze Contact Plating:Gol") 
+        (field 
+          (name "Manufacturer Part") "GT-F0501SR10-06S1101") 
+        (field 
+          (name "Manufacturer") "G-Switch(品赞)") 
+        (field 
+          (name "Supplier Part") "C22380676") 
+        (field 
+          (name "Supplier") "LCSC") 
+        (field 
+          (name "LCSC Part Name") "翻盖式 下接 P数:6P 间距:0.5mm")) 
+      (pins 
+        (pin 
+          (num "1") 
+          (name "1") 
+          (type "unspecified")) 
+        (pin 
+          (num "2") 
+          (name "2") 
+          (type "unspecified")) 
+        (pin 
+          (num "3") 
+          (name "3") 
+          (type "unspecified")) 
+        (pin 
+          (num "4") 
+          (name "4") 
+          (type "unspecified")) 
+        (pin 
+          (num "5") 
+          (name "5") 
+          (type "unspecified")) 
+        (pin 
+          (num "6") 
+          (name "6") 
+          (type "unspecified")) 
+        (pin 
+          (num "7") 
+          (name "7") 
+          (type "unspecified")) 
+        (pin 
+          (num "8") 
+          (name "8") 
+          (type "unspecified"))))) 
+  (libraries 
+    (library 
+      (logical "Library") 
+      (uri "C:/Users/desk/git_repos/bmp-boost-extender_mini/tiny/Library.kicad_sym"))) 
+  (nets 
+    (net 
+      (code "1") 
+      (name "/CS") 
+      (class "Default") 
+      (node 
+        (ref "FPC1") 
+        (pin "5") 
+        (pinfunction "5") 
+        (pintype "unspecified")) 
+      (node 
+        (ref "U1") 
+        (pin "38") 
+        (pinfunction "P0.31") 
+        (pintype "bidirectional"))) 
+    (net 
+      (code "2") 
+      (name "/MOTION") 
+      (class "Default") 
+      (node 
+        (ref "FPC1") 
+        (pin "4") 
+        (pinfunction "4") 
+        (pintype "unspecified")) 
+      (node 
+        (ref "U1") 
+        (pin "37") 
+        (pinfunction "P0.29") 
+        (pintype "bidirectional"))) 
+    (net 
+      (code "3") 
+      (name "/POW") 
+      (class "Default") 
+      (node 
+        (ref "FPC1") 
+        (pin "6") 
+        (pinfunction "6") 
+        (pintype "unspecified")) 
+      (node 
+        (ref "U1") 
+        (pin "33") 
+        (pinfunction "P0.24") 
+        (pintype "bidirectional"))) 
+    (net 
+      (code "4") 
+      (name "/SCLK") 
+      (class "Default") 
+      (node 
+        (ref "FPC1") 
+        (pin "2") 
+        (pinfunction "2") 
+        (pintype "unspecified")) 
+      (node 
+        (ref "U1") 
+        (pin "31") 
+        (pinfunction "P0.17") 
+        (pintype "bidirectional"))) 
+    (net 
+      (code "5") 
+      (name "/SDIO") 
+      (class "Default") 
+      (node 
+        (ref "FPC1") 
+        (pin "3") 
+        (pinfunction "3") 
+        (pintype "unspecified")) 
+      (node 
+        (ref "U1") 
+        (pin "32") 
+        (pinfunction "P0.21") 
+        (pintype "bidirectional"))) 
+    (net 
+      (code "6") 
+      (name "GND") 
+      (class "Default") 
+      (node 
+        (ref "FPC1") 
+        (pin "1") 
+        (pinfunction "1") 
+        (pintype "unspecified")) 
+      (node 
+        (ref "FPC1") 
+        (pin "7") 
+        (pinfunction "7") 
+        (pintype "unspecified")) 
+      (node 
+        (ref "FPC1") 
+        (pin "8") 
+        (pinfunction "8") 
+        (pintype "unspecified")) 
+      (node 
+        (ref "U1") 
+        (pin "30") 
+        (pinfunction "GND") 
+        (pintype "bidirectional"))) 
+    (net 
+      (code "7") 
+      (name "unconnected-(U1A-5V-Pad24)") 
+      (class "Default") 
+      (node 
+        (ref "U1") 
+        (pin "24") 
+        (pinfunction "5V") 
+        (pintype "power_out"))) 
+    (net 
+      (code "8") 
+      (name "unconnected-(U1A-BAT+-Pad25)") 
+      (class "Default") 
+      (node 
+        (ref "U1") 
+        (pin "25") 
+        (pinfunction "BAT+") 
+        (pintype "power_in"))) 
+    (net 
+      (code "9") 
+      (name "unconnected-(U1A-BOOT-Pad22)") 
+      (class "Default") 
+      (node 
+        (ref "U1") 
+        (pin "22") 
+        (pinfunction "BOOT") 
+        (pintype "input"))) 
+    (net 
+      (code "10") 
+      (name "unconnected-(U1A-GND-Pad3)") 
+      (class "Default") 
+      (node 
+        (ref "U1") 
+        (pin "3") 
+        (pinfunction "GND") 
+        (pintype "power_in"))) 
+    (net 
+      (code "11") 
+      (name "unconnected-(U1A-GND-Pad4)") 
+      (class "Default") 
+      (node 
+        (ref "U1") 
+        (pin "4") 
+        (pinfunction "GND") 
+        (pintype "power_in"))) 
+    (net 
+      (code "12") 
+      (name "unconnected-(U1A-GND-Pad23)") 
+      (class "Default") 
+      (node 
+        (ref "U1") 
+        (pin "23") 
+        (pinfunction "GND") 
+        (pintype "power_in"))) 
+    (net 
+      (code "13") 
+      (name "unconnected-(U1A-GND-Pad26)") 
+      (class "Default") 
+      (node 
+        (ref "U1") 
+        (pin "26") 
+        (pinfunction "GND") 
+        (pintype "power_in"))) 
+    (net 
+      (code "14") 
+      (name "unconnected-(U1A-P0.00-Pad19)") 
+      (class "Default") 
+      (node 
+        (ref "U1") 
+        (pin "19") 
+        (pinfunction "P0.00") 
+        (pintype "bidirectional"))) 
+    (net 
+      (code "15") 
+      (name "unconnected-(U1A-P0.03-Pad17)") 
+      (class "Default") 
+      (node 
+        (ref "U1") 
+        (pin "17") 
+        (pinfunction "P0.03") 
+        (pintype "bidirectional"))) 
+    (net 
+      (code "16") 
+      (name "unconnected-(U1A-P0.05-Pad20)") 
+      (class "Default") 
+      (node 
+        (ref "U1") 
+        (pin "20") 
+        (pinfunction "P0.05") 
+        (pintype "bidirectional"))) 
+    (net 
+      (code "17") 
+      (name "unconnected-(U1A-P0.08-Pad1)") 
+      (class "Default") 
+      (node 
+        (ref "U1") 
+        (pin "1") 
+        (pinfunction "P0.08") 
+        (pintype "bidirectional"))) 
+    (net 
+      (code "18") 
+      (name "unconnected-(U1A-P0.09-Pad13)") 
+      (class "Default") 
+      (node 
+        (ref "U1") 
+        (pin "13") 
+        (pinfunction "P0.09") 
+        (pintype "bidirectional"))) 
+    (net 
+      (code "19") 
+      (name "unconnected-(U1A-P0.10-Pad14)") 
+      (class "Default") 
+      (node 
+        (ref "U1") 
+        (pin "14") 
+        (pinfunction "P0.10") 
+        (pintype "bidirectional"))) 
+    (net 
+      (code "20") 
+      (name "unconnected-(U1A-P0.11-Pad2)") 
+      (class "Default") 
+      (node 
+        (ref "U1") 
+        (pin "2") 
+        (pinfunction "P0.11") 
+        (pintype "bidirectional"))) 
+    (net 
+      (code "21") 
+      (name "unconnected-(U1A-P0.16-Pad6)") 
+      (class "Default") 
+      (node 
+        (ref "U1") 
+        (pin "6") 
+        (pinfunction "P0.16") 
+        (pintype "bidirectional"))) 
+    (net 
+      (code "22") 
+      (name "unconnected-(U1A-P0.18-Pad5)") 
+      (class "Default") 
+      (node 
+        (ref "U1") 
+        (pin "5") 
+        (pinfunction "P0.18") 
+        (pintype "bidirectional"))) 
+    (net 
+      (code "23") 
+      (name "unconnected-(U1A-P0.19-Pad7)") 
+      (class "Default") 
+      (node 
+        (ref "U1") 
+        (pin "7") 
+        (pinfunction "P0.19") 
+        (pintype "bidirectional"))) 
+    (net 
+      (code "24") 
+      (name "unconnected-(U1A-P0.20-Pad8)") 
+      (class "Default") 
+      (node 
+        (ref "U1") 
+        (pin "8") 
+        (pinfunction "P0.20") 
+        (pintype "bidirectional"))) 
+    (net 
+      (code "25") 
+      (name "unconnected-(U1A-P0.22-Pad9)") 
+      (class "Default") 
+      (node 
+        (ref "U1") 
+        (pin "9") 
+        (pinfunction "P0.22") 
+        (pintype "bidirectional"))) 
+    (net 
+      (code "26") 
+      (name "unconnected-(U1A-P0.23-Pad10)") 
+      (class "Default") 
+      (node 
+        (ref "U1") 
+        (pin "10") 
+        (pinfunction "P0.23") 
+        (pintype "bidirectional"))) 
+    (net 
+      (code "27") 
+      (name "unconnected-(U1A-P0.30-Pad18)") 
+      (class "Default") 
+      (node 
+        (ref "U1") 
+        (pin "18") 
+        (pinfunction "P0.30") 
+        (pintype "bidirectional"))) 
+    (net 
+      (code "28") 
+      (name "unconnected-(U1A-P1.00-Pad11)") 
+      (class "Default") 
+      (node 
+        (ref "U1") 
+        (pin "11") 
+        (pinfunction "P1.00") 
+        (pintype "bidirectional"))) 
+    (net 
+      (code "29") 
+      (name "unconnected-(U1A-P1.03-Pad12)") 
+      (class "Default") 
+      (node 
+        (ref "U1") 
+        (pin "12") 
+        (pinfunction "P1.03") 
+        (pintype "bidirectional"))) 
+    (net 
+      (code "30") 
+      (name "unconnected-(U1A-P1.14-Pad16)") 
+      (class "Default") 
+      (node 
+        (ref "U1") 
+        (pin "16") 
+        (pinfunction "P1.14") 
+        (pintype "bidirectional"))) 
+    (net 
+      (code "31") 
+      (name "unconnected-(U1A-P1.15-Pad15)") 
+      (class "Default") 
+      (node 
+        (ref "U1") 
+        (pin "15") 
+        (pinfunction "P1.15") 
+        (pintype "bidirectional"))) 
+    (net 
+      (code "32") 
+      (name "unconnected-(U1A-VCC-Pad21)") 
+      (class "Default") 
+      (node 
+        (ref "U1") 
+        (pin "21") 
+        (pinfunction "VCC") 
+        (pintype "power_out"))) 
+    (net 
+      (code "33") 
+      (name "unconnected-(U1B-D+-Pad29)") 
+      (class "Default") 
+      (node 
+        (ref "U1") 
+        (pin "29") 
+        (pinfunction "D+") 
+        (pintype "bidirectional"))) 
+    (net 
+      (code "34") 
+      (name "unconnected-(U1B-D--Pad28)") 
+      (class "Default") 
+      (node 
+        (ref "U1") 
+        (pin "28") 
+        (pinfunction "D-") 
+        (pintype "bidirectional"))) 
+    (net 
+      (code "35") 
+      (name "unconnected-(U1B-P1.02-Pad34)") 
+      (class "Default") 
+      (node 
+        (ref "U1") 
+        (pin "34") 
+        (pinfunction "P1.02") 
+        (pintype "bidirectional"))) 
+    (net 
+      (code "36") 
+      (name "unconnected-(U1B-P1.10-Pad35)") 
+      (class "Default") 
+      (node 
+        (ref "U1") 
+        (pin "35") 
+        (pinfunction "P1.10") 
+        (pintype "bidirectional"))) 
+    (net 
+      (code "37") 
+      (name "unconnected-(U1B-P1.11-Pad36)") 
+      (class "Default") 
+      (node 
+        (ref "U1") 
+        (pin "36") 
+        (pinfunction "P1.11") 
+        (pintype "bidirectional"))) 
+    (net 
+      (code "38") 
+      (name "unconnected-(U1B-VBUS-Pad27)") 
+      (class "Default") 
+      (node 
+        (ref "U1") 
+        (pin "27") 
+        (pinfunction "VBUS") 
+        (pintype "bidirectional")))))
