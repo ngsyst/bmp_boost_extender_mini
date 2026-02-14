@@ -4,8 +4,8 @@ BMP Boostの追加IOポートからFFC接続用のピンを取り出します。
 
 torabo-tsuki-lpのようなBMP Boostを搭載するキーボードに対し、追加のモジュールなどを接続することを想定し設計しています。
 
-<img src="./imgs/bmp-boost-extender_mini.jpg" height="300"> 
-<img src="./imgs/on_bmp_boost.jpg" height="300"> 
+<img src="./imgs/bmp-boost-extender_mini.jpg" height="200"> 
+<img src="./imgs/on_bmp_boost.jpg" height="200"> 
 
 ### 関連リンク
 - [BMP Boost](https://github.com/sekigon-gonnoc/BLE-Micro-Pro/tree/master/bmp-boost)
@@ -32,23 +32,22 @@ BMP Boost Extender Miniは、BMP Boostの追加IOポートに接続して使用�
 1. 12ピンコンスルーを2つに分割し、6ピンずつにします。
 1. 図のように、不要なピンを外します。
 
-    <img src="./imgs/remove_pins.jpg" width="500"> 
+    <img src="./imgs/remove_pins.jpg" width="400"> 
 
 1. BMP Boost Extender MiniをBMP Boostの追加IOポートに接続します。表、裏どちら側からでも接続可能です。
-1. BMP Boost をキーボードのメイン基板に接続します。
 1. FFCを接続して、トラックボールやトラックパッドモジュールを接続します。
 
-    <img src="./imgs/ffc_connection.jpg" width="500"> 
+    <img src="./imgs/ffc_connection.jpg" width="400"> 
 
 ## 注意事項
 torabo-tsuki-lpに接続する場合、純正の電池カバーを使用するとBMP Boost Extender Mini を接続しているコンスルーとわずかに干渉してしまいます。モジュール搭載用電池カバー(下記)を利用するか、
 該当箇所を薄肉化したカスタム電池カバー[Right](3d-models/torabo-tsuki-cover/torabo-tsuki-lp/STL/controller-cover-aa_thin-Right.stl), [Left](3d-models/torabo-tsuki-cover/torabo-tsuki-lp/STL/controller-cover-aa_thin-Left.stl)を使用することをお勧めします。
 
-<img src="./imgs/interference1.jpg" height="300"> 
-<img src="./imgs/interference2.jpg" height="300"> 
+<img src="./imgs/interference1.jpg" height="200"> 
+<img src="./imgs/interference2.jpg" height="200"> 
 
 ## デバイスツリーの例
-- [BMP Boost Extenderの例](https://github.com/ngsyst/torabo-tsuki-om-cuttable/tree/master)を参考にしてください。
+- [BMP Boost Extenderの例](https://github.com/sekigon-gonnoc/BLE-Micro-Pro/tree/master/bmp-boost#%E3%83%87%E3%83%90%E3%82%A4%E3%82%B9%E3%83%84%E3%83%AA%E3%83%BC%E3%81%AE%E4%BE%8B)を参考にしてください。
 
 - 以下はtorabo-tsuki-lp に接続した場合のデバイスツリーの例です。前提として、central側のメイン基板にトラックボールモジュールを接続し、BMP Boost Extender Miniでモジュールを追加する場合を想定しています。(あくまで例示であり、適宜修正してください。)
 
@@ -246,8 +245,8 @@ torabo-tsuki-lpに接続する場合、純正の電池カバーを使用する�
     ```
     </details>
 
-    > [!NOTE] 
-    > double_ballの場合、peripheral側の追加モジュールの動作確認が取れていません。(snippetsなどで適切に設定すればおそらく動作すると思います。)
+> [!NOTE] 
+> double_ballの場合、peripheral側の追加モジュールの動作確認が取れていません。(snippetsなどで適切に設定すればおそらく動作すると思います。)
 
 ## 3Dモデルデータ
 torabo-tsuki-lpファミリーのキーボードの電池カバー部分にモジュールを搭載するための3Dモデルデータを公開します。純正の電池カバーの設計データを編集したもので、モジュール搭載用の穴が開けられています。
