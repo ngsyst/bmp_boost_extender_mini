@@ -243,6 +243,23 @@ torabo-tsuki-lpに接続する場合、純正の電池カバーを使用する�
         };
     };
     ```
+
+    Kconfig.defconfig には、以下を追加してください。
+    ```
+    if SHIELD_TORABO_TSUKI_LP_LEFT || SHIELD_TORABO_TSUKI_LP_RIGHT
+
+    ...
+
+    // 追加部分
+    config ZMK_POINTING
+        default y
+    config IQS7211E
+        default y
+    
+    ...
+
+    endif
+    ```
     </details>
 
 > [!NOTE] 
