@@ -39,6 +39,11 @@ BMP Boost Extender Miniは、BMP Boostの追加IOポートに接続して使用�
 
     <img src="./imgs/ffc_connection.jpg" width="400"> 
 
+動作確認済みのモジュールは以下です。
+
+- トラックボールモジュール(マウスセンサーモジュール): https://github.com/sekigon-gonnoc/small-mouse-sensor-module
+- トラックパッドモジュール： https://github.com/sekigon-gonnoc/iqs7211e-trackpad-module
+
 ## 注意事項
 torabo-tsuki-lpに接続する場合、純正の電池カバーを使用するとBMP Boost Extender Mini を接続しているコンスルーとわずかに干渉してしまいます。モジュール搭載用電池カバー(下記)を利用するか、
 該当箇所を薄肉化したカスタム電池カバー[Right](3d-models/torabo-tsuki-cover/torabo-tsuki-lp/STL/controller-cover-aa_thin-Right.stl), [Left](3d-models/torabo-tsuki-cover/torabo-tsuki-lp/STL/controller-cover-aa_thin-Left.stl)を使用することをお勧めします。
@@ -260,6 +265,23 @@ torabo-tsuki-lpに接続する場合、純正の電池カバーを使用する�
 
     endif
     ```
+
+    west.yaml には、以下を追加してください。
+    ```
+    manifest:
+
+        ...
+        
+        projects:
+            ...
+
+            // 追加部分
+            - name: zmk-driver-iqs7211e
+              remote: sekigon-gonnoc
+
+            ...
+    ```
+
     </details>
 
 > [!NOTE] 
