@@ -1642,11 +1642,19 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "New_Library:GT-F0501SR10-06S1101"
+		(symbol "conn_6p:GT-F0501SR10-06S1101"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "FPC"
+				(at 4.064 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "~"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1654,15 +1662,7 @@
 					)
 				)
 			)
-			(property "Value" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "ProLib_pcs_2026-02-07:FPC-SMD_6P-P0.50_GT-F0501SR10-06S1101"
+			(property "Footprint" ""
 				(at -1.778 -18.034 0)
 				(effects
 					(font
@@ -1671,7 +1671,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "https://item.szlcsc.com/datasheet/GT-F0501SR10-06S1101/23912640.html"
+			(property "Datasheet" ""
 				(at -1.27 -28.448 0)
 				(effects
 					(font
@@ -1680,53 +1680,8 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Locking Feature:Hinged Lid Contact Type:Bottom Contact Number of Contacts:6P Pitch:0.5mm Mounting Type:Surface Mount, Right Angle FFC, FCB Thickness:0.3mm FFC, FCB Thickness:0.3mm Height Above Board:1mm Contact Material:Phosphor Bronze Contact Plating:Gol"
+			(property "Description" ""
 				(at -2.032 -22.86 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Manufacturer Part" "GT-F0501SR10-06S1101"
-				(at -2.286 -25.146 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Manufacturer" "G-Switch(品赞)"
-				(at 2.54 21.082 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Supplier Part" "C22380676"
-				(at 6.604 18.288 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Supplier" "LCSC"
-				(at 19.558 13.97 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "LCSC Part Name" "翻盖式 下接 P数:6P 间距:0.5mm"
-				(at -1.778 -20.828 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1736,8 +1691,8 @@
 			)
 			(symbol "GT-F0501SR10-06S1101_1_0"
 				(rectangle
-					(start -1.27 8.89)
-					(end 3.81 -8.89)
+					(start -1.27 11.43)
+					(end 1.27 -11.43)
 					(stroke
 						(width 0)
 						(type default)
@@ -1747,7 +1702,7 @@
 					)
 				)
 				(pin unspecified line
-					(at -3.81 6.35 0)
+					(at -3.81 7.62 0)
 					(length 2.54)
 					(name "1"
 						(effects
@@ -1765,7 +1720,7 @@
 					)
 				)
 				(pin unspecified line
-					(at -3.81 3.81 0)
+					(at -3.81 5.08 0)
 					(length 2.54)
 					(name "2"
 						(effects
@@ -1819,7 +1774,7 @@
 					)
 				)
 				(pin unspecified line
-					(at -3.81 -3.81 0)
+					(at -3.81 -5.08 0)
 					(length 2.54)
 					(name "5"
 						(effects
@@ -1837,7 +1792,7 @@
 					)
 				)
 				(pin unspecified line
-					(at -3.81 -6.35 0)
+					(at -3.81 -7.62 0)
 					(length 2.54)
 					(name "6"
 						(effects
@@ -1855,7 +1810,7 @@
 					)
 				)
 				(pin unspecified line
-					(at 2.54 11.43 270)
+					(at 0 13.97 270)
 					(length 2.54)
 					(name "7"
 						(effects
@@ -1873,7 +1828,7 @@
 					)
 				)
 				(pin unspecified line
-					(at 2.54 -11.43 90)
+					(at 0 -13.97 90)
 					(length 2.54)
 					(name "8"
 						(effects
@@ -1896,7 +1851,7 @@
 	)
 	(wire
 		(pts
-			(xy 144.78 105.41) (xy 149.86 105.41)
+			(xy 144.78 107.95) (xy 153.67 107.95)
 		)
 		(stroke
 			(width 0)
@@ -1906,7 +1861,7 @@
 	)
 	(wire
 		(pts
-			(xy 156.21 83.82) (xy 156.21 87.63)
+			(xy 157.48 83.82) (xy 157.48 86.36)
 		)
 		(stroke
 			(width 0)
@@ -1926,7 +1881,7 @@
 	)
 	(wire
 		(pts
-			(xy 144.78 102.87) (xy 149.86 102.87)
+			(xy 144.78 105.41) (xy 153.67 105.41)
 		)
 		(stroke
 			(width 0)
@@ -1946,7 +1901,7 @@
 	)
 	(wire
 		(pts
-			(xy 143.51 92.71) (xy 149.86 92.71)
+			(xy 143.51 92.71) (xy 153.67 92.71)
 		)
 		(stroke
 			(width 0)
@@ -1956,7 +1911,7 @@
 	)
 	(wire
 		(pts
-			(xy 144.78 95.25) (xy 149.86 95.25)
+			(xy 144.78 95.25) (xy 153.67 95.25)
 		)
 		(stroke
 			(width 0)
@@ -1966,7 +1921,7 @@
 	)
 	(wire
 		(pts
-			(xy 144.78 97.79) (xy 149.86 97.79)
+			(xy 144.78 99.06) (xy 153.67 99.06)
 		)
 		(stroke
 			(width 0)
@@ -2016,16 +1971,6 @@
 	)
 	(wire
 		(pts
-			(xy 156.21 110.49) (xy 156.21 116.84)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b12b9b71-1af4-4163-acf1-2114525b6b8a")
-	)
-	(wire
-		(pts
 			(xy 85.09 93.98) (xy 90.17 93.98)
 		)
 		(stroke
@@ -2046,7 +1991,17 @@
 	)
 	(wire
 		(pts
-			(xy 144.78 100.33) (xy 149.86 100.33)
+			(xy 157.48 114.3) (xy 157.48 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ea831843-2a24-4f32-92a1-9f4621de95cf")
+	)
+	(wire
+		(pts
+			(xy 144.78 101.6) (xy 153.67 101.6)
 		)
 		(stroke
 			(width 0)
@@ -2065,7 +2020,7 @@
 		(uuid "fa6af1e8-c8aa-4d43-ba12-aaa436534f9b")
 	)
 	(label "CS"
-		(at 144.78 102.87 0)
+		(at 144.78 105.41 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2095,7 +2050,7 @@
 		(uuid "64316a8d-2199-4a7f-873c-0618b2d5a58a")
 	)
 	(label "MOTION"
-		(at 144.78 100.33 0)
+		(at 144.78 101.6 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2135,7 +2090,7 @@
 		(uuid "9dfdcd52-a01d-4dd7-8670-f58b77fb510f")
 	)
 	(label "POW"
-		(at 144.78 105.41 0)
+		(at 144.78 107.95 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2155,7 +2110,7 @@
 		(uuid "b896908a-06a5-4639-9b89-37b16ea24394")
 	)
 	(label "SDIO"
-		(at 144.78 97.79 0)
+		(at 144.78 99.06 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2163,139 +2118,6 @@
 			(justify left bottom)
 		)
 		(uuid "df9aa6a7-c7cb-4f1e-818f-63140ae4f697")
-	)
-	(symbol
-		(lib_id "New_Library:GT-F0501SR10-06S1101")
-		(at 153.67 99.06 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "1f514e73-25af-434b-afeb-f6d1db9f0e50")
-		(property "Reference" "FPC1"
-			(at 158.75 97.7899 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "~"
-			(at 158.75 100.3299 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Library:FPC-SMD_6P-P0.50_GT-F0501SR10-06S1101"
-			(at 151.892 117.094 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://item.szlcsc.com/datasheet/GT-F0501SR10-06S1101/23912640.html"
-			(at 152.4 127.508 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Locking Feature:Hinged Lid Contact Type:Bottom Contact Number of Contacts:6P Pitch:0.5mm Mounting Type:Surface Mount, Right Angle FFC, FCB Thickness:0.3mm FFC, FCB Thickness:0.3mm Height Above Board:1mm Contact Material:Phosphor Bronze Contact Plating:Gol"
-			(at 151.638 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Part" "GT-F0501SR10-06S1101"
-			(at 151.384 124.206 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "G-Switch(品赞)"
-			(at 156.21 77.978 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Supplier Part" "C22380676"
-			(at 160.274 80.772 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Supplier" "LCSC"
-			(at 173.228 85.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part Name" "翻盖式 下接 P数:6P 间距:0.5mm"
-			(at 151.892 119.888 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "6984ae8e-251e-4538-b583-e12a16be2ede")
-		)
-		(pin "3"
-			(uuid "31dd07a6-19f6-424c-a648-4924626c9f2a")
-		)
-		(pin "4"
-			(uuid "e363cff0-1295-4016-b5db-f0fc3a3242a4")
-		)
-		(pin "2"
-			(uuid "7d88f83f-fe2d-4b4c-8547-8c4adc9d206f")
-		)
-		(pin "5"
-			(uuid "139ac1ba-87aa-42d7-b1bf-6433d1f04a3f")
-		)
-		(pin "6"
-			(uuid "cccb1a03-6107-4666-ab90-8a26e7882085")
-		)
-		(pin "7"
-			(uuid "7f300429-6a64-4bbd-b99a-8755a38202e2")
-		)
-		(pin "8"
-			(uuid "805ee030-93ac-4669-993b-e0c5471608aa")
-		)
-		(instances
-			(project ""
-				(path "/815c08ea-bf5d-4627-a659-f0b77cf7dff8"
-					(reference "FPC1")
-					(unit 1)
-				)
-			)
-		)
 	)
 	(symbol
 		(lib_id "Library:GND")
@@ -2500,7 +2322,7 @@
 	)
 	(symbol
 		(lib_id "Library:GND")
-		(at 156.21 116.84 0)
+		(at 157.48 116.84 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2509,7 +2331,7 @@
 		(fields_autoplaced yes)
 		(uuid "933a2917-62a7-447a-b32f-ada0f69c05f1")
 		(property "Reference" "#PWR03"
-			(at 156.21 123.19 0)
+			(at 157.48 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2518,7 +2340,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 156.21 121.92 0)
+			(at 157.48 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2526,7 +2348,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 156.21 116.84 0)
+			(at 157.48 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2535,7 +2357,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 156.21 116.84 0)
+			(at 157.48 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2544,7 +2366,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 156.21 116.84 0)
+			(at 157.48 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2876,6 +2698,94 @@
 		)
 	)
 	(symbol
+		(lib_id "conn_6p:GT-F0501SR10-06S1101")
+		(at 157.48 100.33 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c45fe439-6cd1-4f32-ac19-0402f77c1241")
+		(property "Reference" "FPC1"
+			(at 160.02 99.0599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "~"
+			(at 160.02 101.5999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Library:FPC-SMD_6P-P0.50_GT-F0501SR10-06S1101"
+			(at 155.702 118.364 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 156.21 128.778 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 155.448 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "878c2dfe-dae2-49a8-bb54-4f2b75f5f9da")
+		)
+		(pin "2"
+			(uuid "bbcbd740-80d0-4e8d-97f7-f4dad38b8a77")
+		)
+		(pin "6"
+			(uuid "c1ddbc30-6295-470d-a2ad-414868de2d69")
+		)
+		(pin "7"
+			(uuid "4e83c98d-700d-427a-83a6-78a8bd5f0e97")
+		)
+		(pin "8"
+			(uuid "023d4a3d-6391-4dab-a762-51f211e6c1b6")
+		)
+		(pin "5"
+			(uuid "49f2758d-c85c-4955-93a0-2b7b0ab57eb7")
+		)
+		(pin "3"
+			(uuid "75cc6266-06a5-46c6-b244-e57b82bd2e49")
+		)
+		(pin "4"
+			(uuid "0e612a22-de8b-4661-989e-9194b8f351a5")
+		)
+		(instances
+			(project ""
+				(path "/815c08ea-bf5d-4627-a659-f0b77cf7dff8"
+					(reference "FPC1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "BMP-Boost:BMP-Boost")
 		(at 102.87 34.29 0)
 		(unit 1)
@@ -3054,7 +2964,7 @@
 	)
 	(symbol
 		(lib_id "Library:GND")
-		(at 156.21 83.82 180)
+		(at 157.48 83.82 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3063,7 +2973,7 @@
 		(fields_autoplaced yes)
 		(uuid "eac99830-9b26-49e6-b7e3-03e43f31cfed")
 		(property "Reference" "#PWR02"
-			(at 156.21 77.47 0)
+			(at 157.48 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3072,7 +2982,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 156.21 78.74 0)
+			(at 157.48 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3080,7 +2990,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 156.21 83.82 0)
+			(at 157.48 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3089,7 +2999,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 156.21 83.82 0)
+			(at 157.48 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3098,7 +3008,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 156.21 83.82 0)
+			(at 157.48 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)

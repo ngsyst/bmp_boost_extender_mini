@@ -7,6 +7,14 @@
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "FPC"
+			(at 4.064 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "~"
 			(at 0 0 0)
 			(effects
 				(font
@@ -14,15 +22,7 @@
 				)
 			)
 		)
-		(property "Value" ""
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "ProLib_pcs_2026-02-07:FPC-SMD_6P-P0.50_GT-F0501SR10-06S1101"
+		(property "Footprint" ""
 			(at -1.778 -18.034 0)
 			(effects
 				(font
@@ -31,7 +31,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://item.szlcsc.com/datasheet/GT-F0501SR10-06S1101/23912640.html"
+		(property "Datasheet" ""
 			(at -1.27 -28.448 0)
 			(effects
 				(font
@@ -40,53 +40,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Locking Feature:Hinged Lid Contact Type:Bottom Contact Number of Contacts:6P Pitch:0.5mm Mounting Type:Surface Mount, Right Angle FFC, FCB Thickness:0.3mm FFC, FCB Thickness:0.3mm Height Above Board:1mm Contact Material:Phosphor Bronze Contact Plating:Gol"
+		(property "Description" ""
 			(at -2.032 -22.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Part" "GT-F0501SR10-06S1101"
-			(at -2.286 -25.146 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "G-Switch(品赞)"
-			(at 2.54 21.082 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Supplier Part" "C22380676"
-			(at 6.604 18.288 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Supplier" "LCSC"
-			(at 19.558 13.97 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part Name" "翻盖式 下接 P数:6P 间距:0.5mm"
-			(at -1.778 -20.828 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -96,8 +51,8 @@
 		)
 		(symbol "GT-F0501SR10-06S1101_1_0"
 			(rectangle
-				(start -1.27 8.89)
-				(end 3.81 -8.89)
+				(start -1.27 11.43)
+				(end 1.27 -11.43)
 				(stroke
 					(width 0)
 					(type default)
@@ -107,7 +62,7 @@
 				)
 			)
 			(pin unspecified line
-				(at -3.81 6.35 0)
+				(at -3.81 7.62 0)
 				(length 2.54)
 				(name "1"
 					(effects
@@ -125,7 +80,7 @@
 				)
 			)
 			(pin unspecified line
-				(at -3.81 3.81 0)
+				(at -3.81 5.08 0)
 				(length 2.54)
 				(name "2"
 					(effects
@@ -179,7 +134,7 @@
 				)
 			)
 			(pin unspecified line
-				(at -3.81 -3.81 0)
+				(at -3.81 -5.08 0)
 				(length 2.54)
 				(name "5"
 					(effects
@@ -197,7 +152,7 @@
 				)
 			)
 			(pin unspecified line
-				(at -3.81 -6.35 0)
+				(at -3.81 -7.62 0)
 				(length 2.54)
 				(name "6"
 					(effects
@@ -215,7 +170,7 @@
 				)
 			)
 			(pin unspecified line
-				(at 2.54 11.43 270)
+				(at 0 13.97 270)
 				(length 2.54)
 				(name "7"
 					(effects
@@ -233,7 +188,7 @@
 				)
 			)
 			(pin unspecified line
-				(at 2.54 -11.43 90)
+				(at 0 -13.97 90)
 				(length 2.54)
 				(name "8"
 					(effects
