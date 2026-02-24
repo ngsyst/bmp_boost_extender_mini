@@ -284,9 +284,6 @@ torabo-tsuki-lpに接続する場合、純正の電池カバーを使用する�
 
     </details>
 
-> [!NOTE] 
-> torabo-tsuki-lpでのビルドにおいて、double_ballの場合、peripheral側の追加モジュールの動作確認が取れていません。(snippetsなどで適切に設定すればおそらく動作すると思います。)
-
 ## 3Dモデルデータ
 torabo-tsuki-lpファミリーのキーボードの電池カバー部分にモジュールを搭載するための3Dモデルデータを公開します。純正の電池カバーの設計データを編集したもので、モジュール搭載用の穴が開けられています。
 - torabo-tsuki-lp モジュール搭載用電池カバー: [FreeCAD](3d-models/torabo-tsuki-cover/torabo-tsuki-lp/FreeCAD), [STL](3d-models/torabo-tsuki-cover/torabo-tsuki-lp/STL)
