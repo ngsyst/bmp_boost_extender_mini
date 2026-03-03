@@ -288,7 +288,7 @@ torabo-tsuki-lpに接続する場合、純正の電池カバーを使用する�
     <details>
     <summary> BMP Boost Extender Mini でロータリーエンコーダーを接続する場合</summary>
 
-    EC11などのロータリーエンコーダーをGPIO番号21,17(コネクタGND寄りの2本)に接続する場合の例です。GPIO番号は接続方法によって異なります。
+    EC11などのロータリーエンコーダーをGPIO番号P0.17,P0.21(コネクタGND寄りの2本)に接続する場合の例です。GPIO番号は適宜変更してください。
     詳しくはzmkのドキュメントを参照してください。
     - https://zmk.dev/docs/config/encoders
     - https://zmk.dev/docs/features/encoders
