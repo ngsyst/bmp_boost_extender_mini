@@ -43,6 +43,7 @@ BMP Boost Extender Miniは、BMP Boostの追加IOポートに接続して使用�
 
 - トラックボールモジュール(マウスセンサーモジュール): https://github.com/sekigon-gonnoc/small-mouse-sensor-module
 - トラックパッドモジュール： https://github.com/sekigon-gonnoc/iqs7211e-trackpad-module
+- ロータリーエンコーダー(EC11, 12系)
 
 ## 注意事項
 torabo-tsuki-lpに接続する場合、純正の電池カバーを使用するとBMP Boost Extender Mini を接続しているコンスルーとわずかに干渉してしまいます。モジュール搭載用電池カバー(下記)を利用するか、
@@ -284,6 +285,63 @@ torabo-tsuki-lpに接続する場合、純正の電池カバーを使用する�
 
     </details>
 
+    <details>
+    <summary> BMP Boost Extender Mini でロータリーエンコーダーを接続する場合</summary>
+
+    EC11などのロータリーエンコーダーをGPIO番号21,17(コネクタGND寄りの2本)に接続する場合の例です。GPIO番号は接続方法によって異なります。
+    詳しくはzmkのドキュメントを参照してください。
+    - https://zmk.dev/docs/config/encoders
+    - https://zmk.dev/docs/features/encoders
+
+    ```
+    / {
+        ...
+
+        // 追加部分
+        encoder: encoder {
+            compatible = "alps,ec11";
+            a-gpios = <&gpio0 21 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+            b-gpios = <&gpio0 17 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+            steps = <80>;
+            status = "disabled";
+        };  
+        sensors: sensors {
+            compatible = "zmk,keymap-sensors";
+            sensors = <&encoder>;
+            triggers-per-rotation = <20>;
+        };
+
+        ...
+
+    }
+    ```
+
+    .conf には、以下を追加してください。
+    ```
+    CONFIG_EC11=y
+    CONFIG_EC11_TRIGGER_GLOBAL_THREAD=y
+    ```
+
+    keymap.keymap には、以下を追加してください。以下ではデフォルトレイヤーでボリュームを操作する例を示します。
+    ```
+    keymap {
+        compatible = "zmk,keymap";
+
+        default {
+            bindings = <
+                ...
+            >;
+
+            // 追加部分
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+
+            };
+
+            ...
+    }
+    ```
+
+    </details>
 ## 3Dモデルデータ
 torabo-tsuki-lpファミリーのキーボードの電池カバー部分にモジュールを搭載するための3Dモデルデータを公開します。純正の電池カバーの設計データを編集したもので、モジュール搭載用の穴が開けられています。
 - torabo-tsuki-lp モジュール搭載用電池カバー: [FreeCAD](3d-models/torabo-tsuki-cover/torabo-tsuki-lp/FreeCAD), [STL](3d-models/torabo-tsuki-cover/torabo-tsuki-lp/STL)
