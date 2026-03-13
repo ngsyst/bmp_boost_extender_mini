@@ -303,12 +303,12 @@ torabo-tsuki-lpに接続する場合、純正の電池カバーを使用する�
             a-gpios = <&gpio0 21 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
             b-gpios = <&gpio0 17 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
             steps = <80>;
-            status = "disabled";
+            status = "okay";
         };  
         sensors: sensors {
             compatible = "zmk,keymap-sensors";
             sensors = <&encoder>;
-            triggers-per-rotation = <20>;
+            triggers-per-rotation = <24>;
         };
 
         ...
