@@ -43,6 +43,7 @@ BMP Boost Extender Miniは、BMP Boostの追加IOポートに接続して使用�
 
 - トラックボールモジュール(マウスセンサーモジュール): https://github.com/sekigon-gonnoc/small-mouse-sensor-module
 - トラックパッドモジュール： https://github.com/sekigon-gonnoc/iqs7211e-trackpad-module
+- ポインティングスティックモジュール： https://github.com/sekigon-gonnoc/low-power-pointing-stick
 - ロータリーエンコーダー(EC11, 12系)
 
 ## 注意事項
@@ -283,6 +284,132 @@ torabo-tsuki-lpに接続する場合、純正の電池カバーを使用する�
             ...
     ```
 
+    </details>
+
+    <details>
+    <summary> BMP Boost Extender Mini でポインティングスティックモジュールを追加する場合</summary>
+
+    ```
+    / {
+        ...
+
+        trackball_listener: trackball_listener {
+            compatible = "zmk,input-listener";
+            device = <&trackball>;
+        };
+
+        // 追加部分
+        pointing_stick_ext_listener: pointing_stick_ext_listener {
+            compatible = "zmk,input-listener";
+            device = <&pointing_stick_ext>;
+        };
+
+        ...
+
+    }
+
+    &pinctrl {
+        spi0_default: spi0_default {
+            group1 {
+                psels = <NRF_PSEL(SPIM_SCK, 0, 18)>,
+                    <NRF_PSEL(SPIM_MOSI, 0, 16)>,
+                    <NRF_PSEL(SPIM_MISO, 0, 16)>;
+            };
+        };
+        spi0_sleep: spi0_sleep {
+            group1 {
+                psels = <NRF_PSEL(SPIM_SCK, 0, 18)>,
+                    <NRF_PSEL(SPIM_MOSI, 0, 16)>,
+                    <NRF_PSEL(SPIM_MISO, 0, 16)>;
+                low-power-enable;
+            };
+        };
+        
+        // 追加部分
+        i2c1_default: i2c1_default {
+            group1 {
+                psels = <NRF_PSEL(TWIM_SDA, 0, 17)>,
+                        <NRF_PSEL(TWIM_SCL, 0, 21)>;
+                bias-pull-up;
+            };
+        };
+        i2c1_sleep: i2c1_sleep {
+            group1 {
+                psels = <NRF_PSEL(TWIM_SDA, 0, 17)>,
+                        <NRF_PSEL(TWIM_SCL, 0, 21)>;
+                bias-pull-up;
+                low-power-enable;
+            };
+        };
+    };
+
+    &spi0 {
+        status = "okay";
+        compatible = "nordic,nrf-spim";
+        pinctrl-0 = <&spi0_default>;
+        pinctrl-1 = <&spi0_sleep>;
+        pinctrl-names = "default", "sleep";
+        cs-gpios = <&gpio0 20 GPIO_ACTIVE_LOW>;
+
+        trackball: trackball@0 {
+            status = "okay";
+            compatible = "pixart,paw3222";
+            reg = <0>;
+            spi-max-frequency = <2000000>;
+            irq-gpios = <&gpio0 19 GPIO_ACTIVE_LOW>;
+            power-gpios = <&gpio0 8 (GPIO_ACTIVE_HIGH | NRF_GPIO_DRIVE_H1)>;
+        };
+    };
+
+    // 追加部分
+    &i2c1 {
+        status = "okay";
+        compatible = "nordic,nrf-twim";
+        pinctrl-0 = <&i2c1_default>;
+        pinctrl-1 = <&i2c1_sleep>;
+        pinctrl-names = "default", "sleep";
+        clock-frequency = <I2C_BITRATE_FAST>;
+
+        pointing_stick_ext: pointing_stick_ext@57 {
+            status = "okay";
+            compatible = "lpps";
+            reg = <0x57>;
+            irq-gpios = <&gpio0 31 GPIO_PULL_UP>;
+            power-gpios = <&gpio0 24 (GPIO_ACTIVE_HIGH | NRF_GPIO_DRIVE_H1)>;
+        };
+    };
+    ```
+
+    Kconfig.defconfig には、以下を追加してください。
+    ```
+    if SHIELD_TORABO_TSUKI_LP_LEFT || SHIELD_TORABO_TSUKI_LP_RIGHT
+
+    ...
+
+    // 追加部分
+    config LPPS
+        default y
+    
+    ...
+
+    endif
+
+    ```
+    west.yaml には、以下を追加してください。
+    ```
+    manifest:
+
+        ...
+        
+        projects:
+            ...
+
+            // 追加部分
+            - name: zmk-driver-lpps
+              remote: sekigon-gonnoc
+
+            ...
+    ```
     </details>
 
     <details>
