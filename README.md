@@ -479,9 +479,11 @@ torabo-tsuki-lpファミリーのキーボードの電池カバー部分にモ�
 以下はモジュール搭載用電池カバーに汎用的に搭載可能なモジュールケースです。(素人設計のため攻撃的なデザインになっています。必要に応じて編集もしくは参考にしてください。)
 - 25mmトラックボール: [FreeCAD](3d-models/module_case/FreeCAD/trackball_25mm.FCStd), [STL](3d-models/module_case/STL/trackball_25mm-Body.stl)
 - 30mmトラックパッド: [FreeCAD](3d-models/module_case/FreeCAD/trackpad_30mm.FCStd), [STL](3d-models/module_case/STL/trackpad_30mm-Body.stl)
+- ポインティングスティック: [FreeCAD](3d-models/module_case/FreeCAD/pointing_stick.FCStd), [STL](3d-models/module_case/STL/pointing_stick-Body.stl)
 
     <img src="./imgs/25mm_trackball_case.jpg" height="200"> 
     <img src="./imgs/30mm_trackpad_case.jpg" height="200"> 
+    <img src="./imgs/pointing_stick_case.jpg" height="200"> 
 
 ### モジュールケース仕様 (torabo-tsuki-lpと共通)
 - モジュールケース固定用ねじ径: M2
