@@ -44,7 +44,7 @@ BMP Boost Extender Miniは、BMP Boostの追加IOポートに接続して使用�
 - トラックボールモジュール(マウスセンサーモジュール): https://github.com/sekigon-gonnoc/small-mouse-sensor-module
 - トラックパッドモジュール： https://github.com/sekigon-gonnoc/iqs7211e-trackpad-module
 - ポインティングスティックモジュール： https://github.com/sekigon-gonnoc/low-power-pointing-stick
-- ロータリーエンコーダー(EC11, 12系)
+- ロータリーエンコーダー(EC11, 12系) : 例）https://github.com/ngsyst/1U_encoders
 
 ## 注意事項
 torabo-tsuki-lpに接続する場合、純正の電池カバーを使用するとBMP Boost Extender Mini を接続しているコンスルーとわずかに干渉してしまいます。モジュール搭載用電池カバー(下記)を利用するか、
